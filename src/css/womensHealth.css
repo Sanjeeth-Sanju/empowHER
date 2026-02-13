@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&family=Amatic+SC:wght@400;700&family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Great+Vibes&family=Gruppo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Exa:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+NO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Shojumaru&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.health-page {
+  background-color: #fafafa;
+  color: #1f2937;
+}
+
+.health-header {
+  padding: 120px 64px 80px;
+  text-align: center;
+  background: #6d28d9;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.health-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(109, 40, 217, 0.92) 0%,
+    rgba(109, 40, 217, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+.health-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+.health-header h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.health-header p {
+  font-size: 1.35rem;
+  line-height: 1.85;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.health-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px;
+}
+
+.health-section {
+  margin-bottom: 96px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.health-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 28px;
+  border-left: 6px solid #6d28d9;
+  padding-left: 16px;
+}
+
+.health-section h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 48px 0 20px;
+}
+
+.health-section p {
+  font-size: 1.18rem;
+  line-height: 1.9;
+  color: #374151;
+  margin-bottom: 32px;
+  max-width: 900px;
+}
+
+.health-section ul {
+  padding-left: 32px;
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+.health-section li {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.health-section a {
+  color: #6d28d9;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.health-section a:hover {
+  color: #5b21b6;
+}
+
+.image-container {
+  margin: 48px 0;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.health-image {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -10px rgba(109, 40, 217, 0.18),
+    0 10px 20px -5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.health-image:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 16px;
+  font-style: italic;
+  max-width: 620px;
+  text-align: center;
+}
+
+@media (max-width: 525px) {
+  .health-header {
+    padding: 80px 24px 60px;
+  }
+
+  .health-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .health-header p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .health-content {
+    padding: 40px 20px;
+  }
+
+  .health-section {
+    margin-bottom: 70px;
+  }
+
+  .health-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .health-section h3 {
+    font-size: 1.25rem;
+    margin: 36px 0 16px;
+  }
+
+  .health-section p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .health-section li {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    margin: 36px 0;
+  }
+
+  .health-image {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .health-header {
+    padding: 70px 18px 50px;
+  }
+
+  .health-header h1 {
+    font-size: 2rem;
+  }
+
+  .health-header p {
+    font-size: 1rem;
+  }
+
+  .health-content {
+    padding: 32px 16px;
+  }
+
+  .health-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .health-section h3 {
+    font-size: 1.15rem;
+  }
+
+  .health-section p {
+    font-size: 0.98rem;
+  }
+
+  .health-section li {
+    font-size: 0.95rem;
+  }
+
+  .image-caption {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .health-header {
+    padding: 60px 14px 40px;
+  }
+
+  .health-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .health-header p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .health-content {
+    padding: 24px 12px;
+  }
+
+  .health-section {
+    margin-bottom: 50px;
+  }
+
+  .health-section h2 {
+    font-size: 1.4rem;
+    padding-left: 12px;
+  }
+
+  .health-section h3 {
+    font-size: 1.05rem;
+  }
+
+  .health-section p {
+    font-size: 0.9rem;
+  }
+
+  .health-section li {
+    font-size: 0.88rem;
+  }
+
+  .image-caption {
+    font-size: 0.8rem;
+  }
+}
